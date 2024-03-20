@@ -15,10 +15,10 @@
   - [For aninhado](#for-aninhado)
   - [Mistura de for's e while's](#mistura-de-fors-e-whiles)
 - [Funções](#funções)
+  - [Escopo](#escopo)
   - [Multiplos parâmetros](#multiplos-parâmetros)
   - [Return](#return)
   - [Tipagem](#tipagem)
-- [Organização de código](#organização-de-código)
 - [Estruturas compostas](#estruturas-compostas)
   - [Tuplas](#tuplas)
   - [Listas](#listas)
@@ -26,13 +26,20 @@
   - [Set](#set)
 - [Tratamento de erro e exceção](#tratamento-de-erro-e-exceção)
 - [Classes](#classes)
+  - [Definição](#definição)
+  - [self](#self)
+  - [Interação entre objetos](#interação-entre-objetos)
+  - [\_\_init\_\_](#__init__)
+  - [Inheritance](#inheritance)
+  - [](#)
+  - [](#-1)
 
 
 # Introdução
 _Conhecer o time e experiências_
 _Background de curso, experiência de trabalho, langs, ingles, de onde é, o que já viu de Py_
 # [Pra que serve o Python?](https://www.freecodecamp.org/portuguese/news/para-que-serve-o-python-mais-de-10-casos-de-utilizacao-da-linguagem-de-programacao-python/)
-![](graficos.png)
+![](assets/graficos.png)
 - Linguagem interpretada.
 - Pode ser utilizado em terminal, script ou notebook.
 - Linguagem de alto nível, portanto mais lenta que C.
@@ -68,7 +75,7 @@ _Realizar perguntas de teste_
 1. Métodos e operações de bool
 2. Comparadores (>,<,==,!=)
 ### [Ordem de execução](https://www.inf.pucrs.br/pinho/PCB/ComandosDeDecisao/Decisao.htm)
-![](operadores.png)
+![](assets/operadores.png)
 
 # Manipulação de string
 
@@ -88,7 +95,7 @@ _Realizar perguntas de teste_
 4. Elif
 5. Curiosidades com outros elementos na condição
 > 1. Escreva um programa que leia a idade e classifique como na tabela abaixo
-> ![exercicio](tabelaif.png)
+> ![exercicio](assets/tabelaif.png)
 > 2. Leia duas notas de um aluno, do tipo float, calcule a média e imprima:
 > • Aprovado, se média maior ou igual a 7 e menor ou igual a 10;
 > • Recuperação, se média maior ou igual a 5 e menor que 7;
@@ -119,16 +126,32 @@ Utilização com limite de loop indefinido
 
 # Funções
 `def`
-Utilização
+Importância, utilização, organização de código
+## Escopo
 ## Multiplos parâmetros
 ## Return
 ## Tipagem
-# Organização de código
+
 # Estruturas compostas
+O que é um Iterable
 ## Tuplas
+1. Criação
+2. Operações
+3. Imutabilidade
+4. Slice
+5. Testes de itens dentro de itens
 ## Listas
 ## Dicionários
 ## Set
 # Tratamento de erro e exceção
 # Classes
+## Definição
+Classe vs Objeto
+## self
+## Interação entre objetos
+
+## \_\_init\_\_
+## Inheritance
+## 
+## 
 
