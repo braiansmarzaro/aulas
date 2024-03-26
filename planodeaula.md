@@ -18,7 +18,7 @@
   - [Escopo](#escopo)
   - [Multiplos parâmetros](#multiplos-parâmetros)
   - [Return](#return)
-  - [Tipagem](#tipagem)
+  - [Tipagem e docstring](#tipagem-e-docstring)
 - [Estruturas compostas](#estruturas-compostas)
   - [Tuplas](#tuplas)
   - [Listas](#listas)
@@ -26,13 +26,16 @@
   - [Set](#set)
 - [Tratamento de erro e exceção](#tratamento-de-erro-e-exceção)
 - [Classes](#classes)
+  - [Exemplos](#exemplos)
   - [Definição](#definição)
   - [self](#self)
   - [Interação entre objetos](#interação-entre-objetos)
-  - [\_\_init\_\_](#__init__)
+  - [init](#init)
+  - [Dunders len,str,repr](#dunders-lenstrrepr)
   - [Inheritance](#inheritance)
+  - [@staticmethod](#staticmethod)
+  - [@property](#property)
   - [](#)
-  - [](#-1)
 
 
 # Introdução
@@ -127,10 +130,16 @@ Utilização com limite de loop indefinido
 # Funções
 `def`
 Importância, utilização, organização de código
+Mostrar ao final a transformação de um processo fixado em função genérica.
+> Crie uma função soma que recebe 5 notas e 
+> Crie uma função que tire a média ponderada da quantidade de números escolhida pelo usuário. O usuário deve poder preencher os números seguidos do seu peso associado. Por exemplo, ao digita 5, depois 3, 5 representa o número e 3 representa o peso.
+
+> Refazer as tarefas anteriores utilizando def e generalizando os números fixos
 ## Escopo
 ## Multiplos parâmetros
 ## Return
-## Tipagem
+Salvar resultados e matemática
+## Tipagem e docstring
 
 # Estruturas compostas
 O que é um Iterable
@@ -145,13 +154,21 @@ O que é um Iterable
 ## Set
 # Tratamento de erro e exceção
 # Classes
+## Exemplos
+Cat and Dog
+Jogo de cartas(Modelagem de múltiplas classes: Jogador, Carta, Jogo inteiro)
+Calculadora(Multiplos métodos e operações)
+Funcionário(Inheritance)
+
 ## Definição
 Classe vs Objeto
 ## self
+Mostrar escopos dos def
 ## Interação entre objetos
-
-## \_\_init\_\_
+## init
+## Dunders len,str,repr
 ## Inheritance
-## 
+## @staticmethod
+## @property
 ## 
 
