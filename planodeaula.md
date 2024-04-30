@@ -17,6 +17,7 @@
 - [Estruturas compostas](#estruturas-compostas)
   - [Tuplas](#tuplas)
   - [Listas](#listas)
+    - [Modificação](#modificação)
     - [Ponteiro](#ponteiro)
     - [Listas de listas](#listas-de-listas)
     - [List comprehension](#list-comprehension)
@@ -37,6 +38,7 @@
   - [Filter](#filter)
   - [All \& Any](#all--any)
 - [Opcionais](#opcionais)
+- [Avançado](#avançado)
 - [Classes](#classes)
   - [Definição](#definição)
   - [self](#self)
@@ -53,8 +55,7 @@
 
 
 # Introdução
-_Conhecer o time e experiências_
-_Background de curso, experiência de trabalho, langs, ingles, de onde é, o que já viu de Py_
+_Conhecer o time e experiências: Background de curso, experiência de trabalho, langs, inglês, de onde é, o que já viu de Py_
 # [Pra que serve o Python?](https://www.freecodecamp.org/portuguese/news/para-que-serve-o-python-mais-de-10-casos-de-utilizacao-da-linguagem-de-programacao-python/)
 ![](assets/graficos.png)
 - Linguagem interpretada.
@@ -82,8 +83,9 @@ _Background de curso, experiência de trabalho, langs, ingles, de onde é, o que
 ## Matemática
 +,-,*,**,/,//,%
 
-introdução à biblioteca `math`
+Introdução à biblioteca `math`
 `round()`
+Introdução à biblioteca `random` (`randint`,`random`)
 
 > 1. Leia três números reais e imprima a média dos três
 > 2. Leia um valor de temperatura expresso na escala Celsius e imprima a mesma em graus Fahrenheit. OBS: F = (9/5) * C + 32
@@ -96,11 +98,11 @@ _Realizar perguntas de teste_
 
 # Manipulação de string
 
-1. Operações
-2. Methods (replace, isany, count, len, index,upper,lower,find)
-3. operador in
-4. print detalhado
-5. f-string
+1. print detalhado
+2. f-string
+3. Operações
+4. Methods (replace, isany, count, len, index,upper,lower,find)
+5. operador in
 6. slices
 
 > Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
@@ -123,6 +125,8 @@ Syntaxe e utilizações
 1. Input
 2. If
 3. Inverso
+
+Introdução ao `sleep` para o exercício
 > Escreva um programa que simula uma contagem regressiva de 10 até 0 com atraso(sleep) e imprima "Boom!" ao final
 
 > Escrever um programa que gera e escreve os números ímpares entre 100 e 200. (Demonstrar diversos meios de fazer)
@@ -153,31 +157,69 @@ Utilização com limite de loop indefinido
 ## Mistura de for's e while's
 Explicar a ordem de execução e possíveis casos, como a repetição de uma tarefa de repetição.
 > Leia 5 números inteiros positivo entre 0 e 20 e calcule o fatorial de cada e exiba os fatoriais e ao final exiba a média dos fatoriais.
+
 # Estruturas compostas
-O que é um Iterable
-Falar do `iter()` ao final
+O que é um Iterable?
+
 ## Tuplas
 1. Criação
 2. Operações
 3. Imutabilidade
 4. Slice
-5. Testes de itens dentro de itens
+5. `len`
+6. `sum`
+7. `sorted`
+8. `.index`
+9. `.count`
 ## Listas
-1. Operações com listas(+,-,*,**,/)
-2. `len`
-3. `sum`
-4. `.append`
-5. `.index`
-6. `.count`
+Mostrar o args na função `def foo(*args):`
+
+> Crie uma função que retorne uma lista aleatoria com tamanho definido pela entrada da função.
+
+> Crie uma função que ordene uma lista, usando qualquer algoritmo(sem a função pronta)
+
+> Crie uma função para cadastrar pessoas em uma lista. Cada pessoa é representada por uma tupla(Nome, idade, local). Retorne e exiba a lista
+
+> Em uma cidade do interior, sabe-se que, de janeiro a abril de 1976(121 dias), não ocorreu temperatura inferior a 15ºC nem superior a 40ºC.
+As temperaturas verificadas em cada dia serão lidas e armazenadas em um vetor.
+Fazer um programa que calcule e imprima: • A menor temperatura ocorrida;
+• A maior temperatura ocorrida;
+• A temperatura média;
+• O número de dias nos quais a temperatura foi inferior à temperatura média.
+
+> Carregar um vetor com uma frase e responder quantas letras existem de cada tipo. Contar também o total de caracteres especiais (que não são letras).
+
+> Escrever um programa que gere n valores e conte quantos deles estão no intervalo [j,k] e quantos deles estão fora do intervalo, escrevendo estas informações ao final. Obs: n,j,k são valores arbitrários.
+
+1. Criação
+2. Operações com listas(+,-,*,**,/)
+
+### Modificação
+1. `.append`
+2. `.insert`
+3. `.extend`
+4. `.remove`
+5. `.pop`
+6. `.clear`
 
 ### Ponteiro
 Explicar o bait do ponteiro
 `.copy()`
 ### Listas de listas
+1. Testes de itens dentro de itens
+2. Criação de uma matriz
+3. Preenchimento
+4. Exibição
+5. Pesquisa
+
 ### List comprehension
+Criação de listas usando for
 ## Dicionários
 ### Dict comprehension
 ## Set
+Explicar a utilidade(valores únicos e conjuntos)
+1. Criação
+2. Funções
 
 # Funções
 `def function(args):`
@@ -207,12 +249,19 @@ Parâmetros e argumentos com `=`
 Explicar a utilidade e clareza de código
 
 # Manipulação de arquivos
+> Leia um arquivo txt com elementos separados por espaço e crie uma lista desses elementos
+
+> Leia um arquivo txt com informações de pessoas separados por espaço em cada linha e crie uma matriz desses elementos
+
+> Leia um arquivo csv com o mesmo conteúdo do de pessoas e crie uma matriz
+
+> Crie uma agenda: Função de adicionar, deletar, ver pessoas, modificar pessoa. Salve em txt
 `.txt`,`.csv`,`.json`
 ## Write modes
 read, write, append, binary
 
 # Tratamento de erro e exceção
-> É melhor pedir desculpa do que permissão
+<q><b>É melhor pedir desculpa do que permissão</b></q>
 
 `try,except,else,finally`
 
@@ -228,8 +277,28 @@ read, write, append, binary
 3. Bases numéricas diversas
 4. Números complexos
 5. Vetores
+6. Recursão
+7. Reduce, Filter, All & Any
+# Avançado
+1. Análise de dados com Pandas e Numpy
+2. Machine Learning & Redes Neurais(TensorFlow, Pytorch, Sklearn)
+3. Visão Computacional(OpenCV, Manipulação de Imagem)
 # Classes
+> [^1]Crie uma classe para representar um horario (hora, minuto e segundo). Implemente os métodos para fazer as operacões de incremento (de segundos) no horário e diferença entre dois horarios.
 
+> [^1]Crie uma classe que modele um carro
+(a) Atributos: marca, ano e preço
+(b) Metodos: mostrar preço e de exibição dos dados
+Leia os dados de 5 carros e um valor p, Mostre as informacões de todos os carros com preço menor que p.
+
+> [^1]Crie uma classe que modele uma pessoa
+(a) Atributos: nome, idade e enderec¸o
+(b) Metodos: mostrar enderec¸o e alterar endereço
+Em seguida, crie uma classe que modele uma aluno
+(a) Atributos: nome, numero de matrícula e curso
+(b) Metodos: mostrar curso e alterar curso
+
+[^1]: https://www.facom.ufu.br/~backes/gbt017/ListaPython09.pdf
 ## Definição
 Classe vs Objeto
 Atributos e métodos
