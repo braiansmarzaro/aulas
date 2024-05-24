@@ -18,10 +18,16 @@
   - [Tuplas](#tuplas)
   - [Listas](#listas)
     - [Modificação](#modificação)
+      - [Adição](#adição)
+      - [Deleção](#deleção)
     - [Ponteiro](#ponteiro)
-    - [Listas de listas](#listas-de-listas)
     - [List comprehension](#list-comprehension)
+    - [Listas de listas(Matrizes)](#listas-de-listasmatrizes)
   - [Dicionários](#dicionários)
+    - [Criação](#criação)
+    - [Operação](#operação)
+    - [Métodos](#métodos)
+    - [Loops](#loops)
     - [Dict comprehension](#dict-comprehension)
   - [Set](#set)
 - [Funções](#funções)
@@ -30,15 +36,25 @@
   - [Return](#return)
   - [Valores Default e argumentos opcionais](#valores-default-e-argumentos-opcionais)
   - [Tipagem e docstring](#tipagem-e-docstring)
+  - [Funções com \*args](#funções-com-args)
+  - [Funções com \*\*kwargs](#funções-com-kwargs)
 - [Manipulação de arquivos](#manipulação-de-arquivos)
+  - [Arquivos](#arquivos)
+    - [txt](#txt)
+    - [csv](#csv)
+    - [json](#json)
+    - [excel(apenas citar)](#excelapenas-citar)
   - [Write modes](#write-modes)
+    - [Binary files](#binary-files)
+  - [Open \& with open](#open--with-open)
 - [Tratamento de erro e exceção](#tratamento-de-erro-e-exceção)
 - [Lambda](#lambda)
   - [Reduce](#reduce)
   - [Filter](#filter)
   - [All \& Any](#all--any)
 - [Opcionais](#opcionais)
-- [Avançado](#avançado)
+  - [Intermediário](#intermediário)
+  - [Avançado](#avançado)
 - [Classes](#classes)
   - [Definição](#definição)
   - [self](#self)
@@ -47,8 +63,9 @@
   - [Exemplos](#exemplos)
   - [Dunders len,str,repr](#dunders-lenstrrepr)
   - [Inheritance](#inheritance)
-  - [@staticmethod](#staticmethod)
-  - [@property](#property)
+  - [Decorators](#decorators)
+    - [@staticmethod](#staticmethod)
+    - [@property](#property)
 - [API](#api)
   - [O que é](#o-que-é)
   - [Métodos HTTP](#métodos-http)
@@ -94,7 +111,7 @@ _Realizar perguntas de teste_
 1. Métodos e operações de bool
 2. Comparadores (>,<,==,!=)
 ### [Ordem de execução](https://www.inf.pucrs.br/pinho/PCB/ComandosDeDecisao/Decisao.htm)
-![](assets/operadores.png)
+![operadores](assets/operadores.png)
 
 # Manipulação de string
 
@@ -113,12 +130,19 @@ _Realizar perguntas de teste_
 3. If aninhado
 4. Elif
 5. Curiosidades com outros elementos na condição
+<details>
+<summary>Exercícios</summary>
+
 > 1. Escreva um programa que leia a idade e classifique como na tabela abaixo
 > ![exercicio](assets/tabelaif.png)
+
 > 2. Leia duas notas de um aluno, do tipo float, calcule a média e imprima:
 > • Aprovado, se média maior ou igual a 7 e menor ou igual a 10;
 > • Recuperação, se média maior ou igual a 5 e menor que 7;
 > • Reprovado, se média maior ou igual a 0 (zero) e menor que 5.
+
+</details>
+
 # Loop
 ## For
 Syntaxe e utilizações
@@ -130,6 +154,7 @@ Introdução ao `sleep` para o exercício
 > Escreva um programa que simula uma contagem regressiva de 10 até 0 com atraso(sleep) e imprima "Boom!" ao final
 
 > Escrever um programa que gera e escreve os números ímpares entre 100 e 200. (Demonstrar diversos meios de fazer)
+
 ## While
 Casos de uso, como input
 Utilização com limite de loop indefinido
@@ -172,8 +197,10 @@ O que é um Iterable?
 8. `.index`
 9. `.count`
 ## Listas
-Mostrar o args na função `def foo(*args):`
 
+<details>
+  <summary>Exercícios</summary>
+  
 > Crie uma função que retorne uma lista aleatoria com tamanho definido pela entrada da função.
 
 > Crie uma função que ordene uma lista, usando qualquer algoritmo(sem a função pronta)
@@ -191,31 +218,119 @@ Fazer um programa que calcule e imprima: • A menor temperatura ocorrida;
 
 > Escrever um programa que gere n valores e conte quantos deles estão no intervalo [j,k] e quantos deles estão fora do intervalo, escrevendo estas informações ao final. Obs: n,j,k são valores arbitrários.
 
+</details>
+
+---
 1. Criação
 2. Operações com listas(+,-,*,**,/)
+3. Criação
+4. Modificação
+5. Inserção
+6. Deleção
+7. Loops com listas(`in`, `in range`, `enumerate`)
+8. Funções com listas
+9. List comprehension
+10. Swap
+11. Introdução a algoritmos de busca e ordenação
 
 ### Modificação
+1. Alterar um item
+2. Alterar slice
+3. Alterar slices de tamanhos diferentes
+#### Adição
 1. `.append`
 2. `.insert`
 3. `.extend`
-4. `.remove`
-5. `.pop`
-6. `.clear`
+#### Deleção
+1. `.remove`
+2. `.pop`
+3. `.clear`
+4. `del`
 
 ### Ponteiro
-Explicar o bait do ponteiro
+Explicar o *bait do ponteiro*
 `.copy()`
-### Listas de listas
-1. Testes de itens dentro de itens
-2. Criação de uma matriz
-3. Preenchimento
-4. Exibição
-5. Pesquisa
 
 ### List comprehension
-Criação de listas usando for
+Mostrar, para cada item, a equivalencia em for
+1. If inline `a if x else b`
+2. Filtragens no comprehension (dentro e fora do for)
+3. Criação de listas
+4. Criação de matrizes
+
+### Listas de listas(Matrizes)
+<details>
+  <summary>Exercícios</summary>
+
+> Crie uma matriz 5x5, que seus valores sejam uma sequencia de 0 a 24 sem list comprehension
+
+> Crie uma função que crie listas de zero com a quantidade de colunas e linhas definidas pelos parâmetros
+
+> Crie uma função que crie listas de valores aleatórios com a quantidade de colunas e linhas definidas pelos parâmetros 
+
+> Crie uma função que preencha uma lista recebida nos parâmetros de acordo com a regra(função) de sua escolha, também recebida nos parâmetros
+
+> Crie uma função que calcula a soma de todas as colunas da matriz, e retorna uma lista com os resultados
+
+> Crie uma função que calcula a média de cada linha da matriz e retorna o resultado em uma _lista vertical_ (uma matriz que tem só uma coluna)
+
+> Crie uma Matriz 5x5:
+a) A soma da linha 4 de M.
+b) A soma da coluna 2 de M.
+c) A soma da diagonal principal.
+d) A soma da diagonal secundária.
+e) A soma de todos os elementos da matriz.
+Imprima estas somas e a matriz.
+
+> Calcule a soma da diagonal principal e da antidiagonal de uma matriz quadrada, exiba a soma de cada, os números somados em uma lista e a soma total(diagonal + anti diagonal)
+
+> Crie um jogo da velha no terminal. Pode ser jogado por dois players ou contra um robô que joga aleatoriamente.
+
+> Faça um programa que crie uma matriz 7 X 7 de inteiros, preenchendo cada posição com 0 ou 1, e a seguir escrevendo somente a matriz triangular inferior. Uma matriz triangular inferior é aquela em que os elementos acima da diagonal principal são nulos(zero)
+
+> Faça um programa para gerar a matriz 6x6 abaixo, e depois escrever o seu
+conteúdo:
+1 1 1 1 1 1
+1 2 2 2 2 1
+1 2 3 3 2 1
+1 2 3 3 2 1
+1 2 2 2 2 1
+1 1 1 1 1 1
+
+> Bonus hardcore: Refaça o exercicio acima para que crie a matriz seguindo a regra acima de qualquer tamanho entre 1 e 10.
+</details>
+
+1. Testes de itens dentro de itens
+2. Criação de uma matriz
+3. Preenchimento de uma matriz
+4. Exibição da matriz
+5. Pesquisa na matriz
+
 ## Dicionários
+### Criação
+1. Hardcoded
+2. A partir de duas listas
+3. A partir de lista de tuplas
+4. Dict comprehension(depois)
+
+### Operação
+1. Alterar values
+2. Adicionar chaves
+3. Operações entre dicionários
+
+### Métodos
+1. `.pop()`
+2. `.popitem()`
+3. `.update()`
+4. `.get()`
+
+### Loops
+1. `.keys()`
+2. `.values()`
+3. `.items()`
+
 ### Dict comprehension
+`dicio = {x:y+1 for x,y in range(3)}`
 ## Set
 Explicar a utilidade(valores únicos e conjuntos)
 1. Criação
@@ -224,9 +339,12 @@ Explicar a utilidade(valores únicos e conjuntos)
 # Funções
 `def function(args):`
 Importância, utilização, organização de código
+
 Mostrar ao final a transformação de um processo fixado em uma função genérica.
 
-Importância dos parenteses na chamada da função
+DestacarImportância dos parenteses na chamada da função
+<details>
+  <summary>Exercícios</summary>
 
 > Crie uma função que receba uma string e uma substring e conte quantas vezes a substring está dentro da string. Ex:
 > `>>>contar('a','maria')`
@@ -236,7 +354,10 @@ Importância dos parenteses na chamada da função
 
 > Crie uma função que tire a média ponderada da quantidade de números escolhida pelo usuário. O usuário deve poder preencher os números seguidos do seu peso associado. Por exemplo, ao digita 5, depois 3, 5 representa o número e 3 representa o peso.
 
-> Refazer todas as tarefas anteriores utilizando def e generalizando os números fixos
+> Refazer **todas** as tarefas anteriores utilizando def e generalizando os números fixos(i.e Em vez de range(1,10), usar range(start,stop))
+
+</details>
+
 ## Escopo
 Exemplificar valores de variáveis de mesmo nome em diferentes escopos
 ## Multiplos parâmetros
@@ -247,8 +368,16 @@ Encerrar o código direto
 Parâmetros e argumentos com `=`
 ## Tipagem e docstring
 Explicar a utilidade e clareza de código
+## Funções com *args
+> Exemplo de quantidade indeterminada de notas e tirar a média.
+## Funções com **kwargs
+Explicar funções com muitos parâmetros, que podem ser kwargs
 
 # Manipulação de arquivos
+
+<details>
+  <summary>Exercícios</summary>
+
 > Leia um arquivo txt com elementos separados por espaço e crie uma lista desses elementos
 
 > Leia um arquivo txt com informações de pessoas separados por espaço em cada linha e crie uma matriz desses elementos
@@ -257,8 +386,34 @@ Explicar a utilidade e clareza de código
 
 > Crie uma agenda: Função de adicionar, deletar, ver pessoas, modificar pessoa. Salve em txt
 `.txt`,`.csv`,`.json`
+
+</details>
+
+## Arquivos
+### txt
+
+### csv
+
+### json
+Explicar a relação com dicionário
+1. load
+2. dump
+3. loads
+4. dumps
+### excel(apenas citar)
+
 ## Write modes
-read, write, append, binary
+1. read
+2. write
+3. append
+
+### Binary files
+Citar que tipo de arquivos são binary
+
+## Open & with open
+
+`arq = open(file)`
+`with open(file) as arq:`
 
 # Tratamento de erro e exceção
 <q><b>É melhor pedir desculpa do que permissão</b></q>
@@ -273,17 +428,26 @@ read, write, append, binary
 
 # Opcionais
 1. Datas e tempo
+2. Regular Expressions
 2. Manipulação de bits
 3. Bases numéricas diversas
 4. Números complexos
 5. Vetores
 6. Recursão
 7. Reduce, Filter, All & Any
-# Avançado
+8. Github basics
+## Intermediário
+1. Classes
+## Avançado
 1. Análise de dados com Pandas e Numpy
 2. Machine Learning & Redes Neurais(TensorFlow, Pytorch, Sklearn)
 3. Visão Computacional(OpenCV, Manipulação de Imagem)
+
 # Classes
+
+<details>
+  <summary>Exercícios</summary>
+
 > [^1]Crie uma classe para representar um horario (hora, minuto e segundo). Implemente os métodos para fazer as operacões de incremento (de segundos) no horário e diferença entre dois horarios.
 
 > [^1]Crie uma classe que modele um carro
@@ -292,12 +456,14 @@ read, write, append, binary
 Leia os dados de 5 carros e um valor p, Mostre as informacões de todos os carros com preço menor que p.
 
 > [^1]Crie uma classe que modele uma pessoa
-(a) Atributos: nome, idade e enderec¸o
+(a) Atributos: nome, idade e endereço
 (b) Metodos: mostrar enderec¸o e alterar endereço
 Em seguida, crie uma classe que modele uma aluno
 (a) Atributos: nome, numero de matrícula e curso
 (b) Metodos: mostrar curso e alterar curso
 
+</details>
+  
 [^1]: https://www.facom.ufu.br/~backes/gbt017/ListaPython09.pdf
 ## Definição
 Classe vs Objeto
@@ -307,8 +473,11 @@ Atributos e métodos
 Mostrar escopos dos def
 ## Interação entre objetos
 Gatos e cachorros
+
 ## init
+
 Demonstrar que o init pertence ao objeto
+
 ## Exemplos
 - Cat and Dog
 - Jogo de cartas(Modelagem de múltiplas classes: Jogador, Carta, Jogo inteiro)
@@ -317,8 +486,12 @@ Demonstrar que o init pertence ao objeto
 ## Dunders len,str,repr
 ## Inheritance
 Exemplo do Employee
-## @staticmethod
-## @property
+
+## Decorators
+### @staticmethod
+Explicar a diferença entre algo estático e algo com self
+### @property
+Explicar como funciona o property
 
 # API
 ## O que é
