@@ -4,6 +4,8 @@
   - [Matemática](#matemática)
   - [Álgebra Booleana](#álgebra-booleana)
     - [Ordem de execução](#ordem-de-execução)
+- [Introdução à biblioteca `math`](#introdução-à-biblioteca-math)
+- [Introdução à biblioteca `random`](#introdução-à-biblioteca-random)
 - [Manipulação de string](#manipulação-de-string)
 - [Condicionais](#condicionais)
 - [Loop](#loop)
@@ -21,6 +23,10 @@
       - [Adição](#adição)
       - [Deleção](#deleção)
     - [Ponteiro](#ponteiro)
+    - [Enumerate](#enumerate)
+    - [Zip](#zip)
+    - [Ordenação](#ordenação)
+    - [Busca](#busca)
     - [List comprehension](#list-comprehension)
     - [Listas de listas(Matrizes)](#listas-de-listasmatrizes)
   - [Dicionários](#dicionários)
@@ -39,12 +45,12 @@
   - [Funções com \*args](#funções-com-args)
   - [Funções com \*\*kwargs](#funções-com-kwargs)
 - [Manipulação de arquivos](#manipulação-de-arquivos)
+  - [Write modes](#write-modes)
   - [Arquivos](#arquivos)
     - [txt](#txt)
     - [csv](#csv)
     - [json](#json)
     - [excel(apenas citar)](#excelapenas-citar)
-  - [Write modes](#write-modes)
     - [Binary files](#binary-files)
   - [Open \& with open](#open--with-open)
 - [Tratamento de erro e exceção](#tratamento-de-erro-e-exceção)
@@ -61,20 +67,20 @@
   - [Interação entre objetos](#interação-entre-objetos)
   - [init](#init)
   - [Exemplos](#exemplos)
-  - [Dunders len,str,repr](#dunders-lenstrrepr)
+  - [Dunders](#dunders)
   - [Inheritance](#inheritance)
   - [Decorators](#decorators)
     - [@staticmethod](#staticmethod)
     - [@property](#property)
+    - [@classmethod](#classmethod)
 - [API](#api)
-  - [O que é](#o-que-é)
   - [Métodos HTTP](#métodos-http)
 
 
 # Introdução
 _Conhecer o time e experiências: Background de curso, experiência de trabalho, langs, inglês, de onde é, o que já viu de Py_
 # [Pra que serve o Python?](https://www.freecodecamp.org/portuguese/news/para-que-serve-o-python-mais-de-10-casos-de-utilizacao-da-linguagem-de-programacao-python/)
-![](assets/graficos.png)
+![Diversos gráficos coloridos possíveis de criar em Python](assets/graficos.png)
 - Linguagem interpretada.
 - Pode ser utilizado em terminal, script ou notebook.
 - Linguagem de alto nível, portanto mais lenta que C.
@@ -100,10 +106,6 @@ _Conhecer o time e experiências: Background de curso, experiência de trabalho,
 ## Matemática
 +,-,*,**,/,//,%
 
-Introdução à biblioteca `math`
-`round()`
-Introdução à biblioteca `random` (`randint`,`random`)
-
 > 1. Leia três números reais e imprima a média dos três
 > 2. Leia um valor de temperatura expresso na escala Celsius e imprima a mesma em graus Fahrenheit. OBS: F = (9/5) * C + 32
 ## Álgebra Booleana
@@ -113,6 +115,13 @@ _Realizar perguntas de teste_
 ### [Ordem de execução](https://www.inf.pucrs.br/pinho/PCB/ComandosDeDecisao/Decisao.htm)
 ![operadores](assets/operadores.png)
 
+# Introdução à biblioteca `math`
+`round()`
+# Introdução à biblioteca `random`
+1. `randint()`
+2. `random()`
+3. `seed()`
+4. 
 # Manipulação de string
 
 1. print detalhado
@@ -150,7 +159,7 @@ Syntaxe e utilizações
 2. If
 3. Inverso
 
-Introdução ao `sleep` para o exercício
+Introdução ao `time.sleep()` para o exercício
 > Escreva um programa que simula uma contagem regressiva de 10 até 0 com atraso(sleep) e imprima "Boom!" ao final
 
 > Escrever um programa que gera e escreve os números ímpares entre 100 e 200. (Demonstrar diversos meios de fazer)
@@ -216,7 +225,7 @@ Fazer um programa que calcule e imprima: • A menor temperatura ocorrida;
 
 > Carregar um vetor com uma frase e responder quantas letras existem de cada tipo. Contar também o total de caracteres especiais (que não são letras).
 
-> Escrever um programa que gere n valores e conte quantos deles estão no intervalo [j,k] e quantos deles estão fora do intervalo, escrevendo estas informações ao final. Obs: n,j,k são valores arbitrários.
+> Escrever um programa que gere n valores e conte quantos deles estão no intervalo \[j,k] e quantos deles estão fora do intervalo, escrevendo estas informações ao final. Obs: n,j,k são valores arbitrários.
 
 </details>
 
@@ -251,10 +260,23 @@ Fazer um programa que calcule e imprima: • A menor temperatura ocorrida;
 Explicar o *bait do ponteiro*
 `.copy()`
 
+### Enumerate
+
+### Zip
+- Demonstrar 2 ou mais listas em paralelo
+- Discutir o uso de zip com listas de tamanhos diferentes
+### Ordenação
+1. Greedy
+2. Bubblesort
+
+### Busca
+1. Linear
+2. Binária
+
 ### List comprehension
 Mostrar, para cada item, a equivalencia em for
 1. If inline `a if x else b`
-2. Filtragens no comprehension (dentro e fora do for)
+2. Filtragens (antes e após o for)
 3. Criação de listas
 4. Criação de matrizes
 
@@ -298,6 +320,7 @@ conteúdo:
 1 1 1 1 1 1
 
 > Bonus hardcore: Refaça o exercicio acima para que crie a matriz seguindo a regra acima de qualquer tamanho entre 1 e 10.
+
 </details>
 
 1. Testes de itens dentro de itens
@@ -307,13 +330,38 @@ conteúdo:
 5. Pesquisa na matriz
 
 ## Dicionários
+
+<details>
+  <summary>Exercícios</summary>
+
+> Faça um programa que leia nome e média de 5 alunos,
+guardando também a situação(aprovado se nota maior ou igual a 6) em um dicionário.
+No final, mostre o conteúdo da estrutura na tela.
+
+> [^2]First, create a range from 100 to 160 with steps of 10.
+Second, using dict comprehension, create a dictionary where each number in the range is the key and each item divided by 100 is the value.
+
+> [^2]Using dict comprehension and a conditional argument create a dictionary from the current dictionary where only the key:value pairs with value above 2000 are taken to the new dictionary.
+
+> Dada uma string, crie um dicionário onde as chaves são as letras e os valores são a quantidade de vezes que a letra aparece na string.
+> Ex: `>>>frequencia('maria')`
+> `{'m':1,'a':2,'r':1,'i':1}`
+
+> Create a function called `initialize_nested_dict` that takes a list of keys and initializes a nested dictionary with default values. The default value for each key should be an empty dictionary.
+> Ex: `>>>initialize_nested_dict(['a','b','c'])`
+> `{'a':{},'b':{},'c':{}}`
+</details>
+
+[^2]: https://holypython.com/intermediate-python-exercises/exercise-17-python-dict-comprehensions/
+
 ### Criação
 1. Hardcoded
-2. A partir de duas listas
-3. A partir de lista de tuplas
+2. A partir de duas listas (`dict(zip(lista1,lista2)`)
+3. A partir de lista de tuplas(`dict(list[tuple[any,any]])`)
 4. Dict comprehension(depois)
 
 ### Operação
+Comparar com listas e demonstrar a diferença
 1. Alterar values
 2. Adicionar chaves
 3. Operações entre dicionários
@@ -331,6 +379,9 @@ conteúdo:
 
 ### Dict comprehension
 `dicio = {x:y+1 for x,y in range(3)}`
+`dicio = {y:x for x,y in other.items()}`
+`dicio = {x:func(y) for x,y in other.items()}`
+
 ## Set
 Explicar a utilidade(valores únicos e conjuntos)
 1. Criação
@@ -340,9 +391,10 @@ Explicar a utilidade(valores únicos e conjuntos)
 `def function(args):`
 Importância, utilização, organização de código
 
-Mostrar ao final a transformação de um processo fixado em uma função genérica.
+Mostrar, ao final, a transformação de um processo fixado em uma função genérica.
 
-DestacarImportância dos parenteses na chamada da função
+Destacar a importância dos parenteses na chamada da função
+
 <details>
   <summary>Exercícios</summary>
 
@@ -375,6 +427,8 @@ Explicar funções com muitos parâmetros, que podem ser kwargs
 
 # Manipulação de arquivos
 
+`.txt`,`.csv`,`.json`
+
 <details>
   <summary>Exercícios</summary>
 
@@ -385,28 +439,28 @@ Explicar funções com muitos parâmetros, que podem ser kwargs
 > Leia um arquivo csv com o mesmo conteúdo do de pessoas e crie uma matriz
 
 > Crie uma agenda: Função de adicionar, deletar, ver pessoas, modificar pessoa. Salve em txt
-`.txt`,`.csv`,`.json`
 
 </details>
 
-## Arquivos
-### txt
-
-### csv
-
-### json
-Explicar a relação com dicionário
-1. load
-2. dump
-3. loads
-4. dumps
-### excel(apenas citar)
 
 ## Write modes
 1. read
 2. write
 3. append
+   
+## Arquivos
+### txt
 
+### csv
+Comma Separated Values
+### json
+Explicar a relação com dicionário
+1. `.load()`
+2. `.dump()`
+3. `.loads()`
+4. `.dumps()`
+### excel(apenas citar)
+Pandas & Openpyxl
 ### Binary files
 Citar que tipo de arquivos são binary
 
@@ -428,8 +482,8 @@ Citar que tipo de arquivos são binary
 
 # Opcionais
 1. Datas e tempo
-2. Regular Expressions
-2. Manipulação de bits
+2. Regular Expressions (Regex)
+2. Manipulação de bits (operações com binários)
 3. Bases numéricas diversas
 4. Números complexos
 5. Vetores
@@ -438,6 +492,7 @@ Citar que tipo de arquivos são binary
 8. Github basics
 ## Intermediário
 1. Classes
+2. Manipulação de environment
 ## Avançado
 1. Análise de dados com Pandas e Numpy
 2. Machine Learning & Redes Neurais(TensorFlow, Pytorch, Sklearn)
@@ -479,13 +534,21 @@ Gatos e cachorros
 Demonstrar que o init pertence ao objeto
 
 ## Exemplos
-- Cat and Dog
+- Cat and Dog (Cachorro morde gato e gato chora)
 - Jogo de cartas(Modelagem de múltiplas classes: Jogador, Carta, Jogo inteiro)
 - Calculadora(Múltiplos métodos e operações)
   - Criar uma classe número para brincar
-## Dunders len,str,repr
+## Dunders 
+
+1. Len
+2. Str
+3. Repr
+4. Add
+5. Sub
+6. gt
+
 ## Inheritance
-Exemplo do Employee
+Exemplo do Employee(Comissionado, Horista, Assalariado, Vários cargos)
 
 ## Decorators
 ### @staticmethod
@@ -493,8 +556,13 @@ Explicar a diferença entre algo estático e algo com self
 ### @property
 Explicar como funciona o property
 
+### @classmethod
+Explicar a diferença entre algo estático e algo com cls
+
 # API
-## O que é
+
+As APIs em Python são uma maneira poderosa de interagir com outros aplicativos e serviços, permitindo a troca de dados e a execução de operações de forma padronizada e eficiente.
+
 ## Métodos HTTP
 GET, POST, PUT, DELETE
 Explicação sobre como as APIs utilizam esses métodos para interação.
