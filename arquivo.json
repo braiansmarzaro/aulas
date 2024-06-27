@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "booleano": true,
+  "numero": 123,
+  "float": 123.45,
+  "lista": [1, 2, 3],
+  "dicionario": {
+    "nome": "joao",
+    "idade": 20,
+    "listas": [1, 20, 3],
+    "multiplicador": 10.2
+  }
+}
