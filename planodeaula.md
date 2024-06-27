@@ -525,12 +525,15 @@ Citar que tipo de arquivos são binary
 3. Bases numéricas diversas
 4. Números complexos
 5. Vetores
-6. Recursão
 7. Reduce, Filter, All & Any
 8. Github basics
+   
 ## Intermediário
 1. Classes
-2. Manipulação de environment
+2. Virtual Environment
+3. Tests
+4. Recursão
+   
 ## Avançado
 1. Análise de dados com Pandas e Numpy
 2. Machine Learning & Redes Neurais(TensorFlow, Pytorch, Sklearn)
