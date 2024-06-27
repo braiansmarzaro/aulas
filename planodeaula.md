@@ -36,6 +36,7 @@
     - [Loops](#loops)
     - [Dict comprehension](#dict-comprehension)
   - [Set](#set)
+  - [Métodos](#métodos-1)
 - [Funções](#funções)
   - [Escopo](#escopo)
   - [Multiplos parâmetros](#multiplos-parâmetros)
@@ -209,7 +210,9 @@ O que é um Iterable?
 
 <details>
   <summary>Exercícios</summary>
-  
+
+> Faça um programa que leia um vetor de 5 posições para números reais e, depois, um codigo inteiro. Se o codigo for zero, finalize o programa; se for 1, mostre o vetor na ordem direta; se for 2, mostre o vetor na ordem inversa. Caso, o codigo for diferente de 1 e 2, escreva uma mensagem informando que o codigo é inválido.
+
 > Crie uma função que retorne uma lista aleatoria com tamanho definido pela entrada da função.
 
 > Crie uma função que ordene uma lista, usando qualquer algoritmo(sem a função pronta)
@@ -261,8 +264,26 @@ Explicar o *bait do ponteiro*
 `.copy()`
 
 ### Enumerate
-
+> 
 ### Zip
+> Separe a lista a seguir em 3 listas. Nome do filme, Diretor e Ano.
+> movies = [
+    (
+        "Eternal Sunshine of the Spotless Mind",
+        "Michel Gondry",
+        2004
+    ),
+    (
+        "Memento",
+        "Christopher Nolan",
+        2000
+    ),
+    (
+        "Requiem for a Dream",
+        "Darren Aronofsky",
+        2000
+    )
+]
 - Demonstrar 2 ou mais listas em paralelo
 - Discutir o uso de zip com listas de tamanhos diferentes
 ### Ordenação
@@ -321,7 +342,11 @@ conteúdo:
 
 > Bonus hardcore: Refaça o exercicio acima para que crie a matriz seguindo a regra acima de qualquer tamanho entre 1 e 10.
 
+> [^3]Ler um conjunto de numeros reais, armazenando-o em vetor e calcular o quadrado das componentes deste vetor, armazenando o resultado em outro vetor. Os conjuntos têm 10 elementos cada. Imprimir todos os conjuntos.
+
 </details>
+
+
 
 1. Testes de itens dentro de itens
 2. Criação de uma matriz
@@ -334,9 +359,7 @@ conteúdo:
 <details>
   <summary>Exercícios</summary>
 
-> Faça um programa que leia nome e média de 5 alunos,
-guardando também a situação(aprovado se nota maior ou igual a 6) em um dicionário.
-No final, mostre o conteúdo da estrutura na tela.
+> Faça um programa que leia nome e média de 5 alunos, guardando também a situação(aprovado se nota maior ou igual a 6) em um dicionário. No final, mostre o conteúdo da estrutura na tela.
 
 > [^2]First, create a range from 100 to 160 with steps of 10.
 Second, using dict comprehension, create a dictionary where each number in the range is the key and each item divided by 100 is the value.
@@ -351,8 +374,6 @@ Second, using dict comprehension, create a dictionary where each number in the r
 > Ex: `>>>initialize_nested_dict(['a','b','c'])`
 > `{'a':{},'b':{},'c':{}}`
 </details>
-
-[^2]: https://holypython.com/intermediate-python-exercises/exercise-17-python-dict-comprehensions/
 
 ### Criação
 1. Hardcoded
@@ -386,6 +407,22 @@ Comparar com listas e demonstrar a diferença
 Explicar a utilidade(valores únicos e conjuntos)
 1. Criação
 2. Funções
+## Métodos
+1. `.add()`
+2. `.remove()`
+3. `.discard()`
+4. `.clear()`
+5. `.union()`
+6. `.intersection()`
+7. `.difference()`
+8. `.symmetric_difference()`
+9. `.issubset()`
+10. `.issuperset()`
+11. `.isdisjoint()`
+12. `.copy()`
+13. `.update()`
+17. `.pop()`
+18. `.remove()`
 
 # Funções
 `def function(args):`
@@ -447,10 +484,11 @@ Explicar funções com muitos parâmetros, que podem ser kwargs
 1. read
 2. write
 3. append
-   
+
 ## Arquivos
 ### txt
-
+> Crie um arquivo com 3 linhas que sejam nomes de brinquedo e preço separados por virgula. Salve esses dados em uma lista de tuplas
+> Escreva a lista em um novo arquivo dentro de uma pasta chamada "brinquedos"(O arquivo original não deve estar na mesma pasta)
 ### csv
 Comma Separated Values
 ### json
@@ -472,7 +510,7 @@ Citar que tipo de arquivos são binary
 # Tratamento de erro e exceção
 <q><b>É melhor pedir desculpa do que permissão</b></q>
 
-`try,except,else,finally`
+`try`,`except`,`else`,`finally`
 
 # Lambda
 `lambda x: func`
@@ -566,3 +604,5 @@ As APIs em Python são uma maneira poderosa de interagir com outros aplicativos 
 ## Métodos HTTP
 GET, POST, PUT, DELETE
 Explicação sobre como as APIs utilizam esses métodos para interação.
+
+[^3]: https://www.facom.ufu.br/~backes/gbt017/ListaPython04.pdf
