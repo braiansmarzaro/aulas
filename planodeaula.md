@@ -496,6 +496,8 @@ Destacar a importância dos parenteses na chamada da função
 <details>
   <summary>Exercícios</summary>
 
+> Crie uma função aprovacao que receba 3 notas e a quantidade de faltas e retorna se o aluno passou. Para passar é necessário média maior ou igual a 6 e ter menos de 15 faltas
+
 > Crie uma função que receba uma string e uma substring e conte quantas vezes a substring está dentro da string. Ex:
 > `>>>contar('a','maria')`
 > `2`
