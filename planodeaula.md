@@ -53,7 +53,7 @@
     - [json](#json)
     - [excel(apenas citar)](#excelapenas-citar)
     - [Binary files](#binary-files)
-  - [Open \& with open](#open--with-open)
+    - [Open \& with open](#open--with-open)
 - [Tratamento de erro e exceção](#tratamento-de-erro-e-exceção)
 - [Lambda](#lambda)
   - [Reduce](#reduce)
@@ -77,11 +77,14 @@
 - [API](#api)
   - [Métodos HTTP](#métodos-http)
 
-
 # Introdução
+
 _Conhecer o time e experiências: Background de curso, experiência de trabalho, langs, inglês, de onde é, o que já viu de Py_
+
 # [Pra que serve o Python?](https://www.freecodecamp.org/portuguese/news/para-que-serve-o-python-mais-de-10-casos-de-utilizacao-da-linguagem-de-programacao-python/)
+
 ![Diversos gráficos coloridos possíveis de criar em Python](assets/graficos.png)
+
 - Linguagem interpretada.
 - Pode ser utilizado em terminal, script ou notebook.
 - Linguagem de alto nível, portanto mais lenta que C.
@@ -99,30 +102,43 @@ _Conhecer o time e experiências: Background de curso, experiência de trabalho,
 8. Robótica
 9. API
 10. Backend
+
 # Tipos de variáveis e sintaxe básica
+
 1. `type()`
 2. `int`, `float`, `bool`, `string`
 3. `input()`
 4. `print()`
+
 ## Matemática
+
 +,-,*,**,/,//,%
 
 > 1. Leia três números reais e imprima a média dos três
 > 2. Leia um valor de temperatura expresso na escala Celsius e imprima a mesma em graus Fahrenheit. OBS: F = (9/5) * C + 32
+>
 ## Álgebra Booleana
+
 _Realizar perguntas de teste_
+
 1. Métodos e operações de bool
 2. Comparadores (>,<,==,!=)
+
 ### [Ordem de execução](https://www.inf.pucrs.br/pinho/PCB/ComandosDeDecisao/Decisao.htm)
+
 ![operadores](assets/operadores.png)
 
 # Introdução à biblioteca `math`
+
 `round()`
+
 # Introdução à biblioteca `random`
+
 1. `randint()`
 2. `random()`
 3. `seed()`
-4. 
+4.
+
 # Manipulação de string
 
 1. print detalhado
@@ -135,11 +151,13 @@ _Realizar perguntas de teste_
 > Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
 
 # Condicionais
+
 1. If
 2. Else
 3. If aninhado
 4. Elif
 5. Curiosidades com outros elementos na condição
+
 <details>
 <summary>Exercícios</summary>
 
@@ -154,8 +172,11 @@ _Realizar perguntas de teste_
 </details>
 
 # Loop
+
 ## For
+
 Syntaxe e utilizações
+
 1. Input
 2. If
 3. Inverso
@@ -166,22 +187,29 @@ Introdução ao `time.sleep()` para o exercício
 > Escrever um programa que gera e escreve os números ímpares entre 100 e 200. (Demonstrar diversos meios de fazer)
 
 ## While
+
 Casos de uso, como input
 Utilização com limite de loop indefinido
 
 > Construir um programa que calcule a média aritmética de vários valores inteiros positivos, lidos externamente. O final da leitura acontecerá quando for lido um valor negativo
 
 > Leia um número inteiro positivo entre 0 e 20 e calcule o seu fatorial.
+>
 ### While True
+>
 > Insira numeros até que haja um número <=0, tire a média aritmética dos numeros entre 13 e 73
+>
 ## break
+
 ## continue
+
 ## For aninhado
+>
 > Escrever de 00 a 99 usando for aninhado
 
 > Fazer uma tabuada (De um número, ou desenhar uma grande tabela usando o espaçamento igualado e barras.)
 > _Tente fazer das duas formas_
-> Ex: 
+> Ex:
 > `1 | 2 | 3 | 4 | 5...`
 > `2 | 4 | 6...`
 > OU
@@ -189,14 +217,18 @@ Utilização com limite de loop indefinido
 > `1 x 2 = 2`
 > `1 x 3 = 3`
 > `...`
+>
 ## Mistura de for's e while's
+
 Explicar a ordem de execução e possíveis casos, como a repetição de uma tarefa de repetição.
 > Leia 5 números inteiros positivo entre 0 e 20 e calcule o fatorial de cada e exiba os fatoriais e ao final exiba a média dos fatoriais.
 
 # Estruturas compostas
+
 O que é um Iterable?
 
 ## Tuplas
+
 1. Criação
 2. Operações
 3. Imutabilidade
@@ -206,6 +238,7 @@ O que é um Iterable?
 7. `sorted`
 8. `.index`
 9. `.count`
+
 ## Listas
 
 <details>
@@ -233,6 +266,7 @@ Fazer um programa que calcule e imprima: • A menor temperatura ocorrida;
 </details>
 
 ---
+
 1. Criação
 2. Operações com listas(+,-,*,**,/)
 3. Criação
@@ -246,26 +280,33 @@ Fazer um programa que calcule e imprima: • A menor temperatura ocorrida;
 11. Introdução a algoritmos de busca e ordenação
 
 ### Modificação
+
 1. Alterar um item
 2. Alterar slice
 3. Alterar slices de tamanhos diferentes
+
 #### Adição
+
 1. `.append`
 2. `.insert`
 3. `.extend`
+
 #### Deleção
+
 1. `.remove`
 2. `.pop`
 3. `.clear`
 4. `del`
 
 ### Ponteiro
-Explicar o *bait do ponteiro*
+
+Explicar o _bait do ponteiro_
 `.copy()`
 
 ### Enumerate
-> 
+>
 ### Zip
+>
 > Separe a lista a seguir em 3 listas. Nome do filme, Diretor e Ano.
 > movies = [
     (
@@ -284,24 +325,31 @@ Explicar o *bait do ponteiro*
         2000
     )
 ]
+
 - Demonstrar 2 ou mais listas em paralelo
 - Discutir o uso de zip com listas de tamanhos diferentes
+
 ### Ordenação
+
 1. Greedy
 2. Bubblesort
 
 ### Busca
+
 1. Linear
 2. Binária
 
 ### List comprehension
+
 Mostrar, para cada item, a equivalencia em for
+
 1. If inline `a if x else b`
 2. Filtragens (antes e após o for)
 3. Criação de listas
 4. Criação de matrizes
 
 ### Listas de listas(Matrizes)
+
 <details>
   <summary>Exercícios</summary>
 
@@ -309,7 +357,7 @@ Mostrar, para cada item, a equivalencia em for
 
 > Crie uma função que crie listas de zero com a quantidade de colunas e linhas definidas pelos parâmetros
 
-> Crie uma função que crie listas de valores aleatórios com a quantidade de colunas e linhas definidas pelos parâmetros 
+> Crie uma função que crie listas de valores aleatórios com a quantidade de colunas e linhas definidas pelos parâmetros
 
 > Crie uma função que preencha uma lista recebida nos parâmetros de acordo com a regra(função) de sua escolha, também recebida nos parâmetros
 
@@ -346,8 +394,6 @@ conteúdo:
 
 </details>
 
-
-
 1. Testes de itens dentro de itens
 2. Criação de uma matriz
 3. Preenchimento de uma matriz
@@ -358,6 +404,10 @@ conteúdo:
 
 <details>
   <summary>Exercícios</summary>
+
+> Crie um dicionário com 5 elementos, onde as chaves são os nomes de pessoas e os valores são as idades. Imprima o dicionário e a média das idades.
+
+> Crie uma lista de tuplas a partir dos dados de um dicionário, em que a tupla seja (key,value)
 
 > Faça um programa que leia nome e média de 5 alunos, guardando também a situação(aprovado se nota maior ou igual a 6) em um dicionário. No final, mostre o conteúdo da estrutura na tela.
 
@@ -376,38 +426,48 @@ Second, using dict comprehension, create a dictionary where each number in the r
 </details>
 
 ### Criação
+
 1. Hardcoded
 2. A partir de duas listas (`dict(zip(lista1,lista2)`)
 3. A partir de lista de tuplas(`dict(list[tuple[any,any]])`)
 4. Dict comprehension(depois)
 
 ### Operação
+
 Comparar com listas e demonstrar a diferença
+
 1. Alterar values
 2. Adicionar chaves
 3. Operações entre dicionários
 
 ### Métodos
+
 1. `.pop()`
 2. `.popitem()`
 3. `.update()`
 4. `.get()`
 
 ### Loops
+
 1. `.keys()`
 2. `.values()`
 3. `.items()`
 
 ### Dict comprehension
+
 `dicio = {x:y+1 for x,y in range(3)}`
 `dicio = {y:x for x,y in other.items()}`
 `dicio = {x:func(y) for x,y in other.items()}`
 
 ## Set
+
 Explicar a utilidade(valores únicos e conjuntos)
+
 1. Criação
 2. Funções
+
 ## Métodos
+
 1. `.add()`
 2. `.remove()`
 3. `.discard()`
@@ -425,6 +485,7 @@ Explicar a utilidade(valores únicos e conjuntos)
 18. `.remove()`
 
 # Funções
+
 `def function(args):`
 Importância, utilização, organização de código
 
@@ -448,18 +509,30 @@ Destacar a importância dos parenteses na chamada da função
 </details>
 
 ## Escopo
+
 Exemplificar valores de variáveis de mesmo nome em diferentes escopos
+
 ## Multiplos parâmetros
+
 ## Return
+
 Salvar resultados e matemática
 Encerrar o código direto
+
 ## Valores Default e argumentos opcionais
+
 Parâmetros e argumentos com `=`
+
 ## Tipagem e docstring
+
 Explicar a utilidade e clareza de código
+
 ## Funções com *args
+>
 > Exemplo de quantidade indeterminada de notas e tirar a média.
+>
 ## Funções com **kwargs
+
 Explicar funções com muitos parâmetros, que podem ser kwargs
 
 # Manipulação de arquivos
@@ -477,64 +550,98 @@ Explicar funções com muitos parâmetros, que podem ser kwargs
 
 > Crie uma agenda: Função de adicionar, deletar, ver pessoas, modificar pessoa. Salve em txt
 
+> Modifique o valor da chave de um json através de código: Ler o arquivo, modificá-lo e reescrevê-lo
+
 </details>
 
-
 ## Write modes
+
 1. read
 2. write
 3. append
 
 ## Arquivos
+
 ### txt
+>
 > Crie um arquivo com 3 linhas que sejam nomes de brinquedo e preço separados por virgula. Salve esses dados em uma lista de tuplas
 > Escreva a lista em um novo arquivo dentro de uma pasta chamada "brinquedos"(O arquivo original não deve estar na mesma pasta)
+
 ### csv
+
 Comma Separated Values
+
+- Explicar o que faz esse tipo de arquivo e como usar a biblioca csv basicamente.
+
 ### json
+
 Explicar a relação com dicionário
+
 1. `.load()`
 2. `.dump()`
 3. `.loads()`
 4. `.dumps()`
+
 ### excel(apenas citar)
+
 Pandas & Openpyxl
+
 ### Binary files
+
 Citar que tipo de arquivos são binary
 
-## Open & with open
+### Open & with open
 
 `arq = open(file)`
 `with open(file) as arq:`
 
 # Tratamento de erro e exceção
+
+> Faça um programa que calcule a raiz quadrada de um número N e trate os casos em que N<0.
+
+> Faça um programa que divida dois números e trate os casos que o divisor é zero
+
+> [^4]Crie uma lista de números e utilize um loop for para calcular a soma de todos os elementos. Utilize um bloco try-except para lidar com elementos inválidos.
+
+> [^5]Write a Python program that opens a file and handles a FileNotFoundError exception if the file does not exist.
+
+> [^5]Write a Python program that executes an operation on a list and handles an IndexError exception if the index is out of range.
+
 <q><b>É melhor pedir desculpa do que permissão</b></q>
 
 `try`,`except`,`else`,`finally`
 
+*****dict in the functions
+
 # Lambda
+
 `lambda x: func`
+
 ## Reduce
+
 ## Filter
+
 ## All & Any
 
 # Opcionais
+
 1. Datas e tempo
 2. Regular Expressions (Regex)
-2. Manipulação de bits (operações com binários)
-3. Bases numéricas diversas
-4. Números complexos
-5. Vetores
-7. Reduce, Filter, All & Any
-8. Github basics
-   
+3. Manipulação de bits (operações com binários)
+4. Bases numéricas diversas
+5. Números complexos
+6. Vetores
+7. Github basics
+
 ## Intermediário
+
 1. Classes
 2. Virtual Environment
 3. Tests
 4. Recursão
-   
+
 ## Avançado
+
 1. Análise de dados com Pandas e Numpy
 2. Machine Learning & Redes Neurais(TensorFlow, Pytorch, Sklearn)
 3. Visão Computacional(OpenCV, Manipulação de Imagem)
@@ -553,21 +660,24 @@ Leia os dados de 5 carros e um valor p, Mostre as informacões de todos os carro
 
 > [^1]Crie uma classe que modele uma pessoa
 (a) Atributos: nome, idade e endereço
-(b) Metodos: mostrar enderec¸o e alterar endereço
+(b) Metodos: mostrar endereço e alterar endereço
 Em seguida, crie uma classe que modele uma aluno
 (a) Atributos: nome, numero de matrícula e curso
 (b) Metodos: mostrar curso e alterar curso
 
 </details>
-  
-[^1]: https://www.facom.ufu.br/~backes/gbt017/ListaPython09.pdf
+
 ## Definição
+
 Classe vs Objeto
 Atributos e métodos
 
 ## self
+
 Mostrar escopos dos def
+
 ## Interação entre objetos
+
 Gatos e cachorros
 
 ## init
@@ -575,11 +685,13 @@ Gatos e cachorros
 Demonstrar que o init pertence ao objeto
 
 ## Exemplos
+
 - Cat and Dog (Cachorro morde gato e gato chora)
 - Jogo de cartas(Modelagem de múltiplas classes: Jogador, Carta, Jogo inteiro)
 - Calculadora(Múltiplos métodos e operações)
   - Criar uma classe número para brincar
-## Dunders 
+
+## Dunders
 
 1. Len
 2. Str
@@ -589,15 +701,21 @@ Demonstrar que o init pertence ao objeto
 6. gt
 
 ## Inheritance
+
 Exemplo do Employee(Comissionado, Horista, Assalariado, Vários cargos)
 
 ## Decorators
+
 ### @staticmethod
+
 Explicar a diferença entre algo estático e algo com self
+
 ### @property
+
 Explicar como funciona o property
 
 ### @classmethod
+
 Explicar a diferença entre algo estático e algo com cls
 
 # API
@@ -605,7 +723,12 @@ Explicar a diferença entre algo estático e algo com cls
 As APIs em Python são uma maneira poderosa de interagir com outros aplicativos e serviços, permitindo a troca de dados e a execução de operações de forma padronizada e eficiente.
 
 ## Métodos HTTP
+
 GET, POST, PUT, DELETE
 Explicação sobre como as APIs utilizam esses métodos para interação.
 
-[^3]: https://www.facom.ufu.br/~backes/gbt017/ListaPython04.pdf
+[^1]: <https://www.facom.ufu.br/~backes/gbt017/ListaPython09.pdf>
+[^2]: <https://holypython.com/intermediate-python-exercises/exercise-17-python-dict-comprehensions/>
+[^3]: <https://www.facom.ufu.br/~backes/gbt017/ListaPython04.pdf>
+[^4]: <https://cursos.alura.com.br/forum/topico-exercicio-hora-da-pratica-listas-for-e-try-except-392490>
+[^5]: <https://www.w3resource.com/python-exercises/python-exception-handling-exercises.php>
