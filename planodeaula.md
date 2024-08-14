@@ -481,8 +481,8 @@ Explicar a utilidade(valores únicos e conjuntos)
 11. `.isdisjoint()`
 12. `.copy()`
 13. `.update()`
-17. `.pop()`
-18. `.remove()`
+14. `.pop()`
+15. `.remove()`
 
 # Funções
 
@@ -609,11 +609,9 @@ Citar que tipo de arquivos são binary
 
 > [^5]Write a Python program that executes an operation on a list and handles an IndexError exception if the index is out of range.
 
-<q><b>É melhor pedir desculpa do que permissão</b></q>
+"**É melhor pedir desculpa do que permissão**"
 
 `try`,`except`,`else`,`finally`
-
-*****dict in the functions
 
 # Lambda
 
@@ -630,7 +628,7 @@ Citar que tipo de arquivos são binary
 1. Datas e tempo
 2. Regular Expressions (Regex)
 3. Manipulação de bits (operações com binários)
-4. Bases numéricas diversas
+4. Bases numéricas
 5. Números complexos
 6. Vetores
 7. Github basics
