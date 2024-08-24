@@ -12,8 +12,6 @@
   - [For](#for)
   - [While](#while)
     - [While True](#while-true)
-  - [break](#break)
-  - [continue](#continue)
   - [For aninhado](#for-aninhado)
   - [Mistura de for's e while's](#mistura-de-fors-e-whiles)
 - [Estruturas compostas](#estruturas-compostas)
@@ -79,7 +77,7 @@
 
 # Introdução
 
-_Conhecer o time e experiências: Background de curso, experiência de trabalho, langs, inglês, de onde é, o que já viu de Py_
+_Conhecer @s estudantes e experiências: Background de curso, experiência de trabalho, langs, inglês, de onde é, o que já viu de Py_
 
 # [Pra que serve o Python?](https://www.freecodecamp.org/portuguese/news/para-que-serve-o-python-mais-de-10-casos-de-utilizacao-da-linguagem-de-programacao-python/)
 
@@ -112,7 +110,7 @@ _Conhecer o time e experiências: Background de curso, experiência de trabalho,
 
 ## Matemática
 
-+,-,*,**,/,//,%
+`+`,`-`,`*`,`**`,`/`,`//`,`%`
 
 > 1. Leia três números reais e imprima a média dos três
 > 2. Leia um valor de temperatura expresso na escala Celsius e imprima a mesma em graus Fahrenheit. OBS: F = (9/5) * C + 32
@@ -150,6 +148,8 @@ _Realizar perguntas de teste_
 
 > Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
 
+> Dada um texto de entrada, identifique se nele existe a palavra "santos", caso exista, imprima o index de início e o index do último caractere de "santos"
+
 # Condicionais
 
 1. If
@@ -177,34 +177,36 @@ _Realizar perguntas de teste_
 
 Syntaxe e utilizações
 
-1. Input
+1. objeto `range`
 2. If
 3. Inverso
 
-Introdução ao `time.sleep()` para o exercício
+*Introdução ao `time.sleep()` para o exercício*
 > Escreva um programa que simula uma contagem regressiva de 10 até 0 com atraso(sleep) e imprima "Boom!" ao final
 
 > Escrever um programa que gera e escreve os números ímpares entre 100 e 200. (Demonstrar diversos meios de fazer)
 
 ## While
 
-Casos de uso, como input
-Utilização com limite de loop indefinido
+_If repetitivo_
+
+1. Casos de uso, como input
+2. Utilização com limite de loop indefinido
+3. break
+4. continue
 
 > Construir um programa que calcule a média aritmética de vários valores inteiros positivos, lidos externamente. O final da leitura acontecerá quando for lido um valor negativo
 
 > Leia um número inteiro positivo entre 0 e 20 e calcule o seu fatorial.
->
-### While True
->
-> Insira numeros até que haja um número <=0, tire a média aritmética dos numeros entre 13 e 73
->
-## break
 
-## continue
+> Uma minhoca rasteja 2 metros por dia, andando em linha reta e começando na marca de 15 metros. Outra, rasteja 3 metros por dia, começando na marca de 0 metros. As duas rastejam na mesma direção. Em quantos dias a segunda minhoca ultrapassará a primeira? Em qual distância?
+
+### While True
+
+> Insira numeros até que haja um número <=0, tire a média aritmética dos numeros entre 13 e 73
 
 ## For aninhado
->
+
 > Escrever de 00 a 99 usando for aninhado
 
 > Fazer uma tabuada (De um número, ou desenhar uma grande tabela usando o espaçamento igualado e barras.)
@@ -217,7 +219,7 @@ Utilização com limite de loop indefinido
 > `1 x 2 = 2`
 > `1 x 3 = 3`
 > `...`
->
+
 ## Mistura de for's e while's
 
 Explicar a ordem de execução e possíveis casos, como a repetição de uma tarefa de repetição.
@@ -233,11 +235,12 @@ O que é um Iterable?
 2. Operações
 3. Imutabilidade
 4. Slice
-5. `len`
-6. `sum`
-7. `sorted`
-8. `.index`
-9. `.count`
+5. atribuição de múltiplas variáveis simultâneas
+6. `len`
+7. `sum`
+8. `sorted`
+9. `.index`
+10. `.count`
 
 ## Listas
 
@@ -530,9 +533,9 @@ Parâmetros e argumentos com `=`
 Explicar a utilidade e clareza de código
 
 ## Funções com *args
->
+
 > Exemplo de quantidade indeterminada de notas e tirar a média.
->
+
 ## Funções com **kwargs
 
 Explicar funções com muitos parâmetros, que podem ser kwargs
