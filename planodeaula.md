@@ -26,7 +26,7 @@
     - [Ordenação](#ordenação)
     - [Busca](#busca)
     - [List comprehension](#list-comprehension)
-    - [Listas de listas(Matrizes)](#listas-de-listasmatrizes)
+  - [Listas de listas(Matrizes)](#listas-de-listasmatrizes)
   - [Dicionários](#dicionários)
     - [Criação](#criação)
     - [Operação](#operação)
@@ -34,7 +34,7 @@
     - [Loops](#loops)
     - [Dict comprehension](#dict-comprehension)
   - [Set](#set)
-  - [Métodos](#métodos-1)
+    - [Métodos](#métodos-1)
 - [Funções](#funções)
   - [Escopo](#escopo)
   - [Multiplos parâmetros](#multiplos-parâmetros)
@@ -307,9 +307,11 @@ Explicar o _bait do ponteiro_
 `.copy()`
 
 ### Enumerate
->
+
+Explicar a criação de tuplas e a atribuição de múltiplas variáveis no for
+
 ### Zip
->
+
 > Separe a lista a seguir em 3 listas. Nome do filme, Diretor e Ano.
 > movies = [
     (
@@ -349,9 +351,8 @@ Mostrar, para cada item, a equivalencia em for
 1. If inline `a if x else b`
 2. Filtragens (antes e após o for)
 3. Criação de listas
-4. Criação de matrizes
 
-### Listas de listas(Matrizes)
+## Listas de listas(Matrizes)
 
 <details>
   <summary>Exercícios</summary>
@@ -469,7 +470,7 @@ Explicar a utilidade(valores únicos e conjuntos)
 1. Criação
 2. Funções
 
-## Métodos
+### Métodos
 
 1. `.add()`
 2. `.remove()`
@@ -519,6 +520,8 @@ Exemplificar valores de variáveis de mesmo nome em diferentes escopos
 
 ## Multiplos parâmetros
 
+`def func(a,b,c):`
+
 ## Return
 
 Salvar resultados e matemática
@@ -530,7 +533,7 @@ Parâmetros e argumentos com `=`
 
 ## Tipagem e docstring
 
-Explicar a utilidade e clareza de código
+Explicar a utilidade e clareza de código e conexão com VSCode
 
 ## Funções com *args
 
