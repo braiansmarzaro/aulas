@@ -161,10 +161,11 @@ _Realizar perguntas de teste_
 <details>
 <summary>Exercícios</summary>
 
-> 1. Escreva um programa que leia a idade e classifique como na tabela abaixo
+> 1. Leia a nota de um aluno, printe aprovado se for maior ou igual a 7. Printe reprovado se for menor que 7.
+> 2. Escreva um programa que leia a idade e classifique como na tabela abaixo
 > ![exercicio](assets/tabelaif.png)
 
-> 2. Leia duas notas de um aluno, do tipo float, calcule a média e imprima:
+> 3. Leia duas notas de um aluno, do tipo float, calcule a média e imprima:
 > • Aprovado, se média maior ou igual a 7 e menor ou igual a 10;
 > • Recuperação, se média maior ou igual a 5 e menor que 7;
 > • Reprovado, se média maior ou igual a 0 (zero) e menor que 5.
