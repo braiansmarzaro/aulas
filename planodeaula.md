@@ -148,7 +148,7 @@ _Realizar perguntas de teste_
 
 > Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
 
-> Dada um texto de entrada, identifique se nele existe a palavra "santos", caso exista, imprima o index de início e o index do último caractere de "santos"
+> Dada um texto de entrada, identifique se nele existe a palavra "santos" e printe True se existir, se não, printe False
 
 # Condicionais
 
