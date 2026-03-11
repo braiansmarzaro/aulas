@@ -28,6 +28,8 @@
 
 > O Transformer mudou isso ao permitir o Processamento Paralelo. Ele olha para a frase inteira de uma só vez, como se tirasse uma fotografia de todas as palavras simultaneamente.
 
+<img width="809" height="648" alt="image" src="https://github.com/user-attachments/assets/4552678d-e50b-45c1-b5dc-a03d50d11e20" />
+
 
 ## Self-Attention
 
@@ -54,6 +56,8 @@ Modelo estatístico de texto
 
 
 # Engenharia de Prompt
+
+## System Prompt & User input
 
 ## Personas
 
