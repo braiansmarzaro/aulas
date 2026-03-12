@@ -5,9 +5,10 @@
 - **IA**:
   - Descobre a "regra" entre entrada e saída
 - **LLM**:
-  - Calcula a estatística do próximo token 
+  - Calcula a estatística da próxima palavra (ou token)
 
 ## Por que isso é revolucionário?
+
 **Escalabilidade**: Como ele processa tudo ao mesmo tempo, podemos treiná-lo com volumes massivos de dados (a internet inteira).
 
 **Contexto Longo**: Ele consegue manter a **linha de raciocínio** de um texto inteiro, pois a **atenção** conecta o parágrafo atual com algo dito 10 páginas atrás.
@@ -18,9 +19,18 @@
 2. Doc scavenger
 3. Creative
 4. Agents (Tools)
+5. text-to-text
+6. text-to-image
+7. text-to-audio
+8. audio-to-text
 
-# Como a LLM pensa?
+# Como a LLM _pensa_?
 - Exemplo do corretor do celular para algoritmo de previsão
+
+<img width="2001" height="1023" alt="image" src="https://github.com/user-attachments/assets/ec4b5f3e-e94f-4efc-8286-2980de2ee3e3" /> [^1]
+
+- Multiplas matrizes (weights)
+- Função de
 
 ## Transformers
 
@@ -29,6 +39,8 @@
 > O Transformer mudou isso ao permitir o Processamento Paralelo. Ele olha para a frase inteira de uma só vez, como se tirasse uma fotografia de todas as palavras simultaneamente.
 
 <img width="809" height="648" alt="image" src="https://github.com/user-attachments/assets/4552678d-e50b-45c1-b5dc-a03d50d11e20" />
+
+<img width="1751" height="985" alt="image" src="https://github.com/user-attachments/assets/b8a253b6-cafd-4f2a-9e0a-f6fce7bd243b" /> [^1]
 
 
 ## Self-Attention
@@ -42,6 +54,7 @@
 
 ## Treinamento
 
+<img width="1938" height="1059" alt="image" src="https://github.com/user-attachments/assets/df8345ed-63a6-4879-a4ff-07aebe7f1758" /> [^1]
 
 
 ## Token
@@ -50,10 +63,6 @@
 ## Conceito de Embedding
 > IA não entende letras, ela transforma palavras em números (vetores).
 Exemplo: um mapa 3D onde palavras com significados próximos (ex: "cachorro" e "lobo") moram no mesmo bairro.
-
-## Principio de funcionamento simplificado
-Modelo estatístico de texto
-
 
 # Engenharia de Prompt
 
@@ -73,3 +82,7 @@ Modelo estatístico de texto
 # Limitações
 1. Hallucination
 2. Prompt Injection
+
+
+
+[^1]: https://youtu.be/LPZh9BOjkQs?si=BEfW5IkJwdNYUgqt
