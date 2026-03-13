@@ -15,7 +15,7 @@
 
 
 ## Use-cases conhecidos
-1. Chatbot
+1. Chatbots e assistentes
 2. Doc scavenger
 3. Creative
 4. Agents (Tools)
@@ -25,14 +25,15 @@
 8. audio-to-text
 
 # Como a LLM _pensa_?
-- Exemplo do corretor do celular para algoritmo de previsão
+- Analogia do Corretor de Celular
+  O algoritmo não "entende" sentimentos, ele calcula a probabilidade da próxima peça do quebra-cabeça.
 
 <img width="2001" height="1023" alt="image" src="https://github.com/user-attachments/assets/ec4b5f3e-e94f-4efc-8286-2980de2ee3e3" /> [^1]
 
 - Multiplas matrizes (weights)
-- Função de
 
-## Transformers
+
+## Transformers: O Marco de 2017
 
 > Imagine que, antes de 2017, as IAs liam textos como nós: uma palavra por vez, da esquerda para a direita. Se a frase fosse longa, elas "esqueciam" o início quando chegavam ao fim.
 
@@ -64,6 +65,11 @@
 > IA não entende letras, ela transforma palavras em números (vetores).
 Exemplo: um mapa 3D onde palavras com significados próximos (ex: "cachorro" e "lobo") moram no mesmo bairro.
 
+<img width="1124" height="761" alt="image" src="https://github.com/user-attachments/assets/dcaecb37-8082-43bc-874d-4d16e0f4db69" /> [^2]
+
+<img width="1164" height="500" alt="image" src="https://github.com/user-attachments/assets/1e6a0054-f6b0-454b-b5db-aefca0b7c9fd" /> [^2]
+
+
 # Engenharia de Prompt
 
 ## System Prompt & User input
@@ -86,3 +92,4 @@ Exemplo: um mapa 3D onde palavras com significados próximos (ex: "cachorro" e "
 
 
 [^1]: https://youtu.be/LPZh9BOjkQs?si=BEfW5IkJwdNYUgqt
+[^2]: https://www.youtube.com/watch?v=eMlx5fFNoYc
